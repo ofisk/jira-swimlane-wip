@@ -37,12 +37,17 @@
       <context>swimlaneWIP</context>
     </web-resource>
   </atlassian-plugin>
-  <web-section name="Swimlane WIP Configuration Section" i18n-name-key="swimlane-wip-configuration-section.name" key="swimlane-wip-configuration-section" location="swimlane-wip-configuration" weight="1000">
-    <description key="swimlane-wip-configuration-section.description">The Swimlane WIP Configuration Section Plugin</description>
+  <web-section name="Swimlane WIP Configuration Section" i18n-name-key="configuration-section.name" key="configuration-section" location="configuration-link" weight="1000">
+    <description key="configuration-section.description">The Swimlane WIP Configuration Section Plugin</description>
   </web-section>
-  <web-item name="Swimlane WIP Configuration Link" i18n-name-key="swimlane-wip-configuration-link.name" key="swimlane-wip-configuration-link" section="system.top.navigation.bar" weight="1000">
-    <description key="swimlane-wip-configuration-link.description">The Swimlane WIP Configuration Link Plugin</description>
-    <label key="swimlane-wip-configuration-link.label"></label>
-    <link linkId="swimlane-wip-configuration-link-link"></link>
+  <web-item name="Swimlane WIP Configuration Link" i18n-name-key="configuration-link.name" key="configuration-link" section="system.top.navigation.bar" weight="1000">
+    <description key="configuration-link.description">The Swimlane WIP Configuration Link Plugin</description>
+    <label key="configuration-link.label"/>
+    <link linkId="configuration-link"/>
+  </web-item>
+  <web-item name="Atlassian Developers Site" i18n-name-key="atlassian-developers-site.name" key="atlassian-developers-site" section="configuration-link/configuration-section" weight="1000">
+    <description key="atlassian-developers-site.description">The Atlassian Developers Site Plugin</description>
+    <label key="atlassian-developers-site.label"></label>
+    <link linkId="atlassian-developers-site-link">http://developer.atlassian.com/docs</link>
   </web-item>
 </atlassian-plugin>
