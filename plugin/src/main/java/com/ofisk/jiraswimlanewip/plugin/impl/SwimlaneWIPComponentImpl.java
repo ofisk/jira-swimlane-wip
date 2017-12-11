@@ -3,20 +3,20 @@ package com.ofisk.jiraswimlanewip.plugin.impl;
 import com.atlassian.plugin.spring.scanner.annotation.export.ExportAsService;
 import com.atlassian.plugin.spring.scanner.annotation.imports.ComponentImport;
 import com.atlassian.sal.api.ApplicationProperties;
-import com.ofisk.jiraswimlanewip.plugin.api.MyPluginComponent;
+import com.ofisk.jiraswimlanewip.plugin.api.SwimlaneWIPComponent;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-@ExportAsService ({MyPluginComponent.class})
+@ExportAsService ({SwimlaneWIPComponent.class})
 @Named ("myPluginComponent")
-public class MyPluginComponentImpl implements MyPluginComponent
+public class SwimlaneWIPComponentImpl implements SwimlaneWIPComponent
 {
     @ComponentImport
     private final ApplicationProperties applicationProperties;
 
     @Inject
-    public MyPluginComponentImpl(final ApplicationProperties applicationProperties)
+    public SwimlaneWIPComponentImpl(final ApplicationProperties applicationProperties)
     {
         this.applicationProperties = applicationProperties;
     }

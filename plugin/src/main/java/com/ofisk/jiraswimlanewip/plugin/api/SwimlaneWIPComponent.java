@@ -1,6 +1,6 @@
 package com.ofisk.jiraswimlanewip.plugin.api;
 
-public interface MyPluginComponent
+public interface SwimlaneWIPComponent
 {
     String getName();
 }

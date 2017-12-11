@@ -2,7 +2,7 @@ package it.com.ofisk.jiraswimlanewip.plugin;
 
 import com.atlassian.plugins.osgi.test.AtlassianPluginsTestRunner;
 import com.atlassian.sal.api.ApplicationProperties;
-import com.ofisk.jiraswimlanewip.plugin.api.MyPluginComponent;
+import com.ofisk.jiraswimlanewip.plugin.api.SwimlaneWIPComponent;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -12,17 +12,17 @@ import static org.junit.Assert.assertEquals;
 public class MyComponentWiredTest
 {
     private final ApplicationProperties applicationProperties;
-    private final MyPluginComponent myPluginComponent;
+    private final SwimlaneWIPComponent _swimlaneWIPComponent;
 
-    public MyComponentWiredTest(ApplicationProperties applicationProperties,MyPluginComponent myPluginComponent)
+    public MyComponentWiredTest(ApplicationProperties applicationProperties,SwimlaneWIPComponent swimlaneWIPComponent)
     {
         this.applicationProperties = applicationProperties;
-        this.myPluginComponent = myPluginComponent;
+        this._swimlaneWIPComponent = swimlaneWIPComponent;
     }
 
     @Test
     public void testMyName()
     {
-        assertEquals("names do not match!", "myComponent:" + applicationProperties.getDisplayName(),myPluginComponent.getName());
+        assertEquals("names do not match!", "myComponent:" + applicationProperties.getDisplayName(), _swimlaneWIPComponent.getName());
     }
 }
